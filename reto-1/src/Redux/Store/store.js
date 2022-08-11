@@ -1,4 +1,4 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
+/*import { applyMiddleware, combineReducers, createStore } from "redux";
 import { userReducer } from "../Reducers/userReducer";
 import thunk from "redux-thunk";
 
@@ -16,4 +16,4 @@ export const store = createStore(
     composeEnhancers(
         applyMiddleware(thunk)
     )
-)
+)*/

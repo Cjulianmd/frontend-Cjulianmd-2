@@ -1,4 +1,4 @@
-import { userTypes } from "../Types/userTypes";
+/*import { userTypes } from "../Types/userTypes";
 
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signInWithPopup, updateProfile } from "firebase/auth";
 import { google } from "../../Firebase/firebaseConfig";
@@ -67,4 +67,4 @@ export const LoginWithEmail = (email, password) => {
 const loginSync = (user) => ({
     type: userTypes.login,
     payload: user
-})
+})*/
