@@ -149,14 +149,15 @@ color: #FFFFFF;
 `
 export const TextB = styled.div`
 
-/* Social media */
+/* google */
 
 
 position: absolute;
-width: 72px;
-height: 60px;
+width: 25px;
+height: 25px;
 left: 159px;
-top: 639px;
+top: 672px;
+
 
 `
 export const Imputbox = styled.div`
@@ -244,14 +245,15 @@ right: 25.38%;
 top: 93.6%;
 bottom: 4.38%;
 
-font-family: 'Inter';
+font-family: 'Raleway';
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
-line-height: 17px;
-/* identical to box height */
-
+line-height: 16px;
 text-align: center;
+letter-spacing: -0.3px;
+
+color: #2BE7E8;
 
 
 background: linear-gradient(92.67deg, #BFC3FC 0.11%, #A2C3FC 100%);
@@ -1484,4 +1486,14 @@ height: 176px;
 left: 16px;
 top: 710px;
 
+`
+export const TextB12 = styled.div`
+/* facebook */
+
+
+position: absolute;
+width: 25px;
+height: 25px;
+left: 206px;
+top: 672px;
 `

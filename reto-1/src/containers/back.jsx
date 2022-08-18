@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextB, TitleB, InputT, InputP, Log, TextB2, Texts, BtpreN, BtNext} from '../style/StyleGlobal';
+import { TextB, TitleB, InputT, InputP, Log, TextB2, Texts, BtpreN, BtNext, TextB12} from '../style/StyleGlobal';
 import {Link, NavLink} from 'react-router-dom'
 import Tap1 from '../components/NavBar'
 import logo from '../assets/img/Logo.svg'
@@ -40,8 +40,11 @@ const LoginForm = () => {
          </TitleB>
          <TextB>
          <button onClick ={handleGoogle} ><img src={gogle} alt=""/></button>
-         <img src={face} alt=""/>
          </TextB>
+         <TextB12>
+         <img src={face} alt=""/>
+         </TextB12>
+
            <form onSubmit={handleSubmit} className="my-10">
                <div className="flex flex-col space-y-5">
                    <label htmlFor="email">
@@ -60,7 +63,9 @@ const LoginForm = () => {
                      <TextB2>
                      D’ont have account ?
                      </TextB2>
-                  
+                     <Texts>
+                     Sign In
+                     </Texts>
                      </NavLink>
                </div>
            </form>
