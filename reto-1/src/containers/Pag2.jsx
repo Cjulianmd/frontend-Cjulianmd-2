@@ -15,9 +15,10 @@ class Quiz extends Component {
                 <NavLink to="/Pag3">
                     <BtNext ><center><BtpreN>Next</BtpreN></center></BtNext>
                 </NavLink>
-                <TitleN>Sell</TitleN>
+                <TitleN>Discipline</TitleN>
                 <TextN>
-                List your items for sale and see how fast they get bought
+                Develop discipline in yourself
+ train every day
                 </TextN>
                 <SliderN><td><img src={slider} alt=""/></td></SliderN>
             </React.StrictMode>

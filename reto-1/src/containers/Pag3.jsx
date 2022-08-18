@@ -15,9 +15,10 @@ class Quiz extends Component {
                 <NavLink to="/iniciarseccion">
                     <BtNext ><center><BtpreN>Next</BtpreN></center></BtNext>
                 </NavLink>
-                <TitleN>Buy</TitleN>
+                <TitleN>Сharacter</TitleN>
                 <TextN>
-                See and choose products suitable products or products that are nearby
+                Cultivate in you an iron character
+ for training
                 </TextN>
                 <SliderN><td><img src={slider} alt=""/></td></SliderN>
             </React.StrictMode>

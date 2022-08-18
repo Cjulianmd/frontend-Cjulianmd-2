@@ -25,10 +25,11 @@ export const Img1 = styled.div`
 
 
 position: absolute;
-left: 28.97%;
-right: 28.97%;
-top: 27.25%;
-bottom: 53.32%;
+width: 281px;
+height: 301px;
+left: 54px;
+top: 205px;
+
     
     
 `
@@ -39,10 +40,11 @@ export const Img2 = styled.div`
     align-items: center;
     justify-content:center;
     position: absolute;
-    left: 17.69%;
-    right: 17.69%;
-    top: 25.24%;
-    bottom: 46.09%;
+    width: 940px;
+    height: 554px;
+    left: -254px;
+    top: 0px;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,42 +63,40 @@ export const ButtonN = styled.div`
 
 `
 export const TitleN = styled.div`
-/* Choose */
+/* Workout */
 
 
 position: absolute;
-width: 56px;
-height: 19px;
-left: 167px;
-top: 470px;
+width: 96px;
+height: 28px;
+left: 147px;
+top: 615px;
 
 font-family: 'Raleway';
 font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
 text-align: center;
 letter-spacing: -0.3px;
 
-/* Main dark color */
+/* White */
 
-color: #474747;
+color: #FFFFFF;
 
 
 
 `
 
 export const TextN = styled.div`
-/* Choose products available add to favorites and then buy */
+/* Start training with usand build muscle or lose weight */
 
 
 position: absolute;
-width: 187px;
+width: 180px;
 height: 32px;
-left: 102px;
-top: 490px;
+left: 105px;
+top: 651px;
 
 font-family: 'Raleway';
 font-style: normal;
@@ -106,9 +106,9 @@ line-height: 16px;
 text-align: center;
 letter-spacing: -0.3px;
 
-/* Main dark color */
+/* White */
 
-color: #474747;
+color: #FFFFFF;
 `
 
 export const SliderN = styled.div`
@@ -116,10 +116,11 @@ export const SliderN = styled.div`
 
 
 position: absolute;
-width: 60px;
+width: 59px;
 height: 9px;
 left: 165px;
-top: 747px;
+top: 699px;
+
 `
 export const TitleB = styled.div`
    /* Sing In */
@@ -169,26 +170,36 @@ export const Imputbox = styled.div`
 export const InputT = styled.input.attrs(({
     type: "email"
   }))`
-  box-sizing: border-box;
-    padding: 10px;
-    position: absolute;
-    width: 358px;
-    height: 44px;
-    left: 16px;
-    top: 272px;
-    border-radius: 15px;
+  /* Rectangle 48 */
+
+
+position: absolute;
+width: 358px;
+height: 44px;
+left: 16px;
+top: 332px;
+
+/* Additional shade of the main color */
+
+background: #2E3562;
+border-radius: 44px;
   `;
   export const InputP = styled.input.attrs(props => ({
     type: "password"
   }))`
-  box-sizing: border-box;
-  padding: 10px;
-  position: absolute;
-    width: 358px;
-    height: 44px;
-    left: 16px;
-    top: 326px;
-  border-radius: 15px;
+  /* Rectangle 48 */
+
+
+position: absolute;
+width: 358px;
+height: 44px;
+left: 17px;
+top: 386px;
+
+/* Additional shade of the main color */
+
+background: #2E3562;
+border-radius: 44px;
   `;
   
   export const Log = styled.div`

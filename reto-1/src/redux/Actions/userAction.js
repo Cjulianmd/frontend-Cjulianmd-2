@@ -1,8 +1,11 @@
 import { userTypes } from "../types/userTypes"
-import { getAuth, signInWithPopup } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signInWithPopup, updateProfile } from 'firebase/auth';
 import { google } from "../../firebase/firebaseconfig";
 import { GoogleAuthProvider } from 'firebase/auth';
 //aqui se pueden hacer las condicionales
+
+
+
 
 export const loginGogle = () => {
     return (dispatch) => {
@@ -43,16 +46,33 @@ export const loginsincrono = (email, password) => {
     }
     
 }
-export const registerincrono = (name, email,number, password) => { 
-    return{ 
-        type: userTypes.register,
-        payload: {
-            email,
-            name,
-            number,
-            password
-        
-        }
+export const registerWithEmail = ( email, password, name ) => {
+    return(dispatch) => {
+        const auth = getAuth();
+        createUserWithEmailAndPassword( auth, email, password )
+        .then(async ()=> {
+            await updateProfile(auth.currentUser, { displayName: name })
+            dispatch(registerSync({email, password, name}))
+        } )
     }
-    
 }
+const registerSync = ( user ) => {
+    return {
+        type: userTypes.register,
+        payload: user
+    }
+}
+
+export const LoginWithEmail = (email, password) => {
+    return(dispatch) => {
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+        .then(({user: {displayName, email}}) => dispatch(loginSync({ displayName, email, password })))
+        .catch(() => console.log("Usuario o contraseña invalida"))
+    }
+}
+
+const loginSync = (user) => ({
+    type: userTypes.login,
+    payload: user
+})

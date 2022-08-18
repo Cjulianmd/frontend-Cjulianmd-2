@@ -7,7 +7,7 @@ import gogle from '../assets/img/google.svg'
 import face from '../assets/img/facebook.svg'
 import { useForm } from "../Hooks/useForm";
 import { useDispatch } from './../../node_modules/react-redux/es/hooks/useDispatch';
-import { loginGogle, loginsincrono } from './../redux/Actions/userAction';
+import { loginGogle, loginsincrono, LoginWithEmail } from './../redux/Actions/userAction';
 
 
 const LoginForm = () => {
@@ -15,13 +15,13 @@ const LoginForm = () => {
        email: '',
        password: ''
    })
-
+   document.body.style = 'background: #1F233E; '
    const dispatch = useDispatch();
 
    const handleSubmit = (e) => {
        e.preventDefault();
 
-       dispatch(loginsincrono(formValues.email, formValues.password))
+       dispatch(LoginWithEmail(formValues.email, formValues.password))
 
        reset()
    }

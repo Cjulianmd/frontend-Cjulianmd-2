@@ -5,13 +5,12 @@ import { Img1 } from '../style/StyleGlobal';
 
 
 class Home extends Component {
-    render() {
+    render() {document.body.style = 'background: #1F233E; '
         return (
             <div>
                 <Img1>
-                    
                     <NavLink to="/Pag1">
-                        <td><img src={logo} alt=""/></td>
+                        <img src={logo} alt=""/>
                     </NavLink>
                 </Img1>
             </div>

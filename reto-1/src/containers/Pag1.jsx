@@ -14,9 +14,10 @@ class Quiz extends Component {
                 <Img2><td><img src={Img1} alt=""/></td>
                 </Img2>
                
-                <TitleN>Choose</TitleN>
+                <TitleN>Workout</TitleN>
                 <TextN>
-                Choose products available add to favorites and then buy
+                Start training with usand build
+ muscle or lose weight
                 </TextN>
                 <SliderN><td><img src={slider} alt=""/></td></SliderN>
                 <NavLink to="/Pag2">

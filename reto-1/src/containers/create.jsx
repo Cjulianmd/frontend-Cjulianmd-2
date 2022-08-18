@@ -7,10 +7,11 @@ import gogle from '../assets/img/google.svg'
 import face from '../assets/img/facebook.svg'
 import { useForm } from "../Hooks/useForm";
 import { useDispatch } from './../../node_modules/react-redux/es/hooks/useDispatch';
-import { loginGogle, registerincrono } from './../redux/Actions/userAction';
+import { loginGogle, registerincrono, registerWithEmail } from './../redux/Actions/userAction';
 
 
 const LoginForm = () => {
+   document.body.style = 'background: #1F233E; '
    const [formValues, handleInputChange, reset] = useForm({
        email: '',
        name: '',
@@ -23,9 +24,8 @@ const LoginForm = () => {
    const handleSubmit = (e) => {
        e.preventDefault();
          console.log(formValues)
-       dispatch(registerincrono(formValues.name,formValues.email,formValues.number, formValues.password))
+         dispatch(registerWithEmail(formValues.email, formValues.password, formValues.name));
 
-       reset()
    }
    const handleGoogle = () => {
       dispatch(loginGogle())
