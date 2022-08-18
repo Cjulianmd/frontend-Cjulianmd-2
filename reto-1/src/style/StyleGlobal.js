@@ -122,53 +122,40 @@ left: 165px;
 top: 747px;
 `
 export const TitleB = styled.div`
-    /* Welcome back */
+   /* Sing In */
 
 
-    position: absolute;
-    left: 4.1%;
-    right: 52.56%;
-    top: 18.72%;
-    bottom: 77.84%;
+position: absolute;
+width: 73px;
+height: 28px;
+left: 159px;
+top: 292px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: -0.3px;
 
-    text-align: center;
-    letter-spacing: -0.3px;
+/* White */
 
-    /* Dark color */
-
-    color: #4B4B4B;
+color: #FFFFFF;
 
 
 
 `
 export const TextB = styled.div`
 
-    /* Sign in to an existing account using your phone number */
+/* Social media */
 
 
-    position: absolute;
-    left: 7.1%;
-    right: 48.21%;
-    top: 22.87%;
-    bottom: 73.1%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.3px;
-
-    /* Dark color */
-
-    color: #4B4B4B;
+position: absolute;
+width: 72px;
+height: 60px;
+left: 159px;
+top: 639px;
 
 `
 export const Imputbox = styled.div`
@@ -180,7 +167,7 @@ export const Imputbox = styled.div`
     background-color:blue;
 `
 export const InputT = styled.input.attrs(({
-    type: "number"
+    type: "email"
   }))`
   box-sizing: border-box;
     padding: 10px;
@@ -265,42 +252,38 @@ text-fill-color: transparent;
 `
 
 export const InputN = styled.input.attrs(props => ({
-    type: "select"
+    type: "text"
   }))`
-  /* Rectangle 65 */
+  /* Rectangle 48 */
 
-
-box-sizing: border-box;
 
 position: absolute;
 width: 358px;
-height: 32px;
+height: 44px;
 left: 16px;
-top: 114px;
+top: 332px;
 
-/* Main color */
+/* Additional shade of the main color */
 
-border: 1px solid #B4FFD8;
-border-radius: 151px;
+background: #2E3562;
+border-radius: 44px;
   `;
   export const InputE = styled.input.attrs(props => ({
-    type: "select"
+    type: "email"
   }))`
-  /* Rectangle 66 */
+  /* Rectangle 48 */
 
 
-  box-sizing: border-box;
-  
-  position: absolute;
-  width: 358px;
-  height: 32px;
-  left: 16px;
-  top: 156px;
-  
-  /* Main color */
-  
-  border: 1px solid #B4FFD8;
-  border-radius: 151px;
+position: absolute;
+width: 358px;
+height: 44px;
+left: 17px;
+top: 386px;
+
+/* Additional shade of the main color */
+
+background: #2E3562;
+border-radius: 44px;
   `;
   
   export const TitleC = styled.div`
@@ -356,38 +339,37 @@ border-radius: 151px;
 export const InputT1 = styled.input.attrs(({
     type: "number"
   }))`
-  box-sizing: border-box;
+  /* Rectangle 48 */
+
 
 position: absolute;
-width: 171px;
-height: 32px;
+width: 358px;
+height: 44px;
 left: 16px;
-top: 230px;
+top: 440px;
 
-/* Main color */
+/* Additional shade of the main color */
 
-border: 1px solid #B4FFD8;
-border-radius: 35px;
+background: #2E3562;
+border-radius: 44px;
   `;
 
   export const InputP1 = styled.input.attrs(props => ({
-    type: "number"
+    type: "password"
   }))`
-  /* Rectangle 68 */
+  /* Rectangle 48 */
 
-
-box-sizing: border-box;
 
 position: absolute;
-width: 171px;
-height: 32px;
-left: 203px;
-top: 230px;
+width: 358px;
+height: 44px;
+left: 16px;
+top: 494px;
 
-/* Main color */
+/* Additional shade of the main color */
 
-border: 1px solid #B4FFD8;
-border-radius: 35px;
+background: #2E3562;
+border-radius: 44px;
   `;
   export const Re1 = styled.div`
     position: absolute;
@@ -921,19 +903,18 @@ right: 45.9%;
 top: 30.22%;
 bottom: 30.77%;
 
-font-family: 'Inter';
+
+font-family: 'Raleway';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
-
+font-size: 18px;
+line-height: 21px;
 text-align: center;
 letter-spacing: -0.3px;
 
-/* Dark color */
+/* White */
 
-color: #4B4B4B;
+color: #FFFFFF;
 
 `
 export const BtNext = styled.div`
@@ -943,14 +924,14 @@ export const BtNext = styled.div`
 
 position: absolute;
 width: 358px;
-height: 32px;
+height: 44px;
 left: 16px;
-top: 772px;
+top: 760px;
 
-/* Main color */
+/* Optional second color */
 
-background: #B4FFD8;
-border-radius: 109px;
+background: #2BE7E8;
+border-radius: 35px;
 `
 
 export const BoxPre = styled.div`
@@ -1186,16 +1167,17 @@ border-radius: 15px;
 `
 
 export const Btpre1 = styled.div`
-/* Language rules */
-left: 16px;
-font-family: 'Inter';
+font-family: 'Raleway';
 font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-/* Dark color */
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+letter-spacing: -0.3px;
 
-color: #4B4B4B;
+/* White */
+
+color: #FFFFFF;
 
 `
 

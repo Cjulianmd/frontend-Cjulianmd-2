@@ -12,7 +12,7 @@ class Quiz extends Component {
                 <Tap1/>
                 <Img2><td><img src={Img1} alt=""/></td>
                 </Img2>
-                <NavLink to="/information">
+                <NavLink to="/iniciarseccion">
                     <BtNext ><center><BtpreN>Next</BtpreN></center></BtNext>
                 </NavLink>
                 <TitleN>Buy</TitleN>

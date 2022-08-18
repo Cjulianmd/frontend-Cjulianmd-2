@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './redux/Store/store';
 import AppRoutes from './routes/AppRoutes';
 import { NavBarStyled } from './style/StyleGlobal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBarStyled>
-      <AppRoutes/>
-    </NavBarStyled>
+    <Provider store={store}>
+      <NavBarStyled>
+        <AppRoutes/>
+      </NavBarStyled>
+    </Provider>
   </React.StrictMode>
 );
 

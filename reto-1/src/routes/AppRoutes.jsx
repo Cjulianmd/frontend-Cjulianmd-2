@@ -1,4 +1,57 @@
-import React, { Component } from 'react';
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+import Home from "../containers/information";
+import Login from "../containers/back";
+import Register from "../containers/create";
+
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+
+import { PrivateRouter } from "./PrivateRouter";
+import { PublicRouter } from "./PublicRouter";
+ 
+
+
+const AppRouter = () => {
+    /*const [auth, setAuth] = useState(false)
+   
+    useEffect(() => {
+        const auth = getAuth();
+        onAuthStateChanged( auth, (user) => {
+            if (user?.uid) {
+                console.log(user);
+                // Posibilidad de recuperar la info luego de que se recargue la web
+                setAuth(true)
+            } else {
+                setAuth(false)
+            }
+        } )
+    }, [])*/
+
+    const auth = false
+    return (
+        <BrowserRouter>
+            <Routes>
+                {/* Rutas publicas */}
+                <Route path='/login' element={<PublicRouter isAutentication={auth}> <Login /> </PublicRouter>} />
+                <Route path='/register' element={<PublicRouter isAutentication={auth}> <Register /> </PublicRouter>} />
+                
+                {/* Rutas privadas */}
+                <Route path='/' element={<PrivateRouter isAutentication={auth}> <Home /> </PrivateRouter>} />
+
+                {/* Redireccionamiento */}
+                <Route path='*' element={<Navigate to='/login' />} />
+            </Routes>
+        </BrowserRouter>
+    )
+}
+
+export default AppRouter
+
+
+
+
+/*import React, { Component } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Splashscreen from '../containers/Splashscreen';
@@ -8,9 +61,10 @@ import Pag3 from '../containers/Pag3'
 import Home from '../containers/information'
 import Very from '../containers/veryfication' 
 import Filtro from '../containers/filtrert' 
-
+import Iniciar from '../containers/back'
 import Walled from '../components/walled'
 import Addwalled from '../components/addwalled'
+import Create from '../containers/create'
 class AppRoutes extends Component {
     render() {
         return (
@@ -26,10 +80,12 @@ class AppRoutes extends Component {
                     <Route path="/veryfication" element={<Very/>}/>
                     <Route path="/Walled" element={<Walled/>}/>
                     <Route path="/Addwalled" element={<Addwalled/>}/>
+                    <Route path="/iniciarseccion" element={<Iniciar/>}/>
+                    <Route path="/create" element={<Create/>}/>
                 </Routes>
             </BrowserRouter>
         );
     }
 }
 
-export default AppRoutes;
+export default AppRoutes;*/

@@ -9,7 +9,7 @@ class back extends Component {
       <div>
          <React.StrictMode>
          <Tap1/>
-         <NavLink to="/Singin"><Fle><td><img src={flecha} alt=""/></td></Fle></NavLink>
+         <NavLink to="/create"><Fle><td><img src={flecha} alt=""/></td></Fle></NavLink>
          <TitleV>
              Phone verification
          </TitleV>
