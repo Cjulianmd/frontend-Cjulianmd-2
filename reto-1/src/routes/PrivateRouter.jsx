@@ -4,5 +4,5 @@ export const PrivateRouter =({isAutentication, children})=> {
     
     return isAutentication
     ? children
-    : <Navigate to='/login' />
+    : <Navigate to='/spashs' />
 }

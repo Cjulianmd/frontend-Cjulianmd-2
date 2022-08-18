@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
+import Splashscreen from '../containers/Splashscreen';
 import Home from "../containers/information";
 import Login from "../containers/back";
 import Register from "../containers/create";
-
+import Pag1 from '../containers/Pag1'
+import Pag2 from '../containers/Pag2'
+import Pag3 from '../containers/Pag3'
+import NavBar from '../components/NavBar';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import { PrivateRouter } from "./PrivateRouter";
@@ -13,26 +16,30 @@ import { PublicRouter } from "./PublicRouter";
 
 
 const AppRouter = () => {
-    /*const [auth, setAuth] = useState(false)
+    const [auth, setAuth] = useState(false)
    
     useEffect(() => {
         const auth = getAuth();
         onAuthStateChanged( auth, (user) => {
             if (user?.uid) {
-                console.log(user);
+                console.log(user.displayName);
                 // Posibilidad de recuperar la info luego de que se recargue la web
                 setAuth(true)
             } else {
                 setAuth(false)
             }
         } )
-    }, [])*/
+    }, [])
 
-    const auth = false
     return (
         <BrowserRouter>
+        <NavBar/>
             <Routes>
                 {/* Rutas publicas */}
+                <Route path="/spashs" element={<PublicRouter isAutentication={auth}><Splashscreen/></PublicRouter>}/>
+                <Route path="/Pag1" element={<PublicRouter isAutentication={auth}><Pag1/></PublicRouter>}/>
+                <Route path="/Pag2" element={<PublicRouter isAutentication={auth}><Pag2/></PublicRouter>}/>
+                <Route path="/Pag3" element={<PublicRouter isAutentication={auth}><Pag3/></PublicRouter>}/>
                 <Route path='/login' element={<PublicRouter isAutentication={auth}> <Login /> </PublicRouter>} />
                 <Route path='/register' element={<PublicRouter isAutentication={auth}> <Register /> </PublicRouter>} />
                 

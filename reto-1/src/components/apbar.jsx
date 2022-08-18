@@ -7,18 +7,22 @@ import Profile from "../assets/img/i4.svg";
 import Mas from "../assets/img/i5.svg";
 import {NavLink} from 'react-router-dom'
 import { Apbari5 } from './../style/StyleGlobal';
-export default class apbar extends Component {
-  render() {
+import { getAuth, signOut } from "firebase/auth";
+export default function apbar(){
+  const logOut = () => {
+    const auth = getAuth();
+    signOut(auth);
+    window.location.href="./login"
+}
     return (
       <div>
         <Re3>
         <NavLink to="/Home"><Apbari ><img  src={Home} alt=""/></Apbari></NavLink>
         <NavLink to="/test"><Apbari2> <img src={Test} alt=""/></Apbari2></NavLink>
-        <NavLink to="/test"><Apbari> <img src={Mas} alt=""/></Apbari></NavLink>
+        <NavLink to="/test"><Apbari5> <img src={Mas} alt=""/></Apbari5></NavLink>
         <NavLink to="/estadistica"><Apbari3> <img src={estadistica} alt=""/></Apbari3></NavLink>
-        <NavLink to="/pagina-perfil"><Apbari4><img src={Profile} alt=""/></Apbari4></NavLink>
+        <NavLink onClick={logOut} to="/login"><Apbari4><img src={Profile} alt=""/></Apbari4></NavLink>
         </Re3>
       </div>
     )
-  }
 }

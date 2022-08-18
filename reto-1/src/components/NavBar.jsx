@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Tab } from '../style/StyleGlobal';
 import tap from '../assets/img/tap.svg'
 
-class NavBar extends Component {
-    render() {
+function NavBar(){
         return (
             <div>
                 
@@ -14,7 +13,6 @@ class NavBar extends Component {
                 
             </div>
         );
-    }
 }
 
 export default NavBar;
