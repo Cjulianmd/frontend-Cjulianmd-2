@@ -1,12 +1,90 @@
-import React, { Component } from 'react'
-import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE, BtNext, TextB} from '../style/StyleGlobal';
-import Create from '../assets/img/create.svg';
+import React from 'react'
+import { TextB, TitleB, InputN, InputP, Log, TextB2, Texts, BtpreN, BtNext, InputE, InputT1, InputP1} from '../style/StyleGlobal';
+import {Link, NavLink} from 'react-router-dom'
 import Tap1 from '../components/NavBar'
+import logo from '../assets/img/Logo.svg'
 import gogle from '../assets/img/google.svg'
 import face from '../assets/img/facebook.svg'
-import axios from 'axios'
-import { BtpreN } from './../style/StyleGlobal';
-const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios/';
+import { useForm } from "../Hooks/useForm";
+import { useDispatch } from './../../node_modules/react-redux/es/hooks/useDispatch';
+import { loginGogle, registerincrono } from './../redux/Actions/userAction';
+
+
+const LoginForm = () => {
+   const [formValues, handleInputChange, reset] = useForm({
+       email: '',
+       name: '',
+       number:'',
+       password: ''
+   })
+
+   const dispatch = useDispatch();
+
+   const handleSubmit = (e) => {
+       e.preventDefault();
+         console.log(formValues)
+       dispatch(registerincrono(formValues.name,formValues.email,formValues.number, formValues.password))
+
+       reset()
+   }
+   const handleGoogle = () => {
+      dispatch(loginGogle())
+   }
+   
+
+   return (
+      <>
+      <Tap1/>
+         <img src={logo} alt=""/>
+         <TitleB>
+         
+            sing in
+         </TitleB>
+         <TextB>
+         <button onClick ={handleGoogle} ><img src={gogle} alt=""/></button>
+         <img src={face} alt=""/>
+         </TextB>
+           <form onSubmit={handleSubmit} className="my-10">
+               <div className="flex flex-col space-y-5">
+                   <label htmlFor="name">
+                       <InputN id="name" name="name" type="name" className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="name" onChange={handleInputChange} value={formValues.name} />
+                   </label>
+                   <label htmlFor="email">
+                       <InputE id="email" name="email" type="email" className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter email address" onChange={handleInputChange} value={formValues.email} />
+                   </label>
+                   <label htmlFor="number">
+                       <InputT1 id="number" name="number" type="number" className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="numbers" onChange={handleInputChange} value={formValues.email} />
+                   </label>
+                   <label htmlFor="password">
+                       <InputP1 id="password" name="password" type="password" className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter your password" onChange={handleInputChange} value={formValues.password}/>
+                   </label>
+                   <button>
+                        <BtNext >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                        <BtpreN>long</BtpreN>
+                        </BtNext>
+                    </button>
+                   <NavLink  to="/register" >
+                     <TextB2>
+                     D’ont have account ?
+                     </TextB2>
+                  
+                     </NavLink>
+               </div>
+           </form>
+           
+      </>
+   )
+   
+}
+
+export default LoginForm;
+
+
+
+/*
+import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE,TextB, TitleB, InputT, InputP, Log, TextB2, Texts, BtpreN, BtNext} from '../style/StyleGlobal';
+import { InputN, InputT1 } from './../style/StyleGlobal';
 class create extends Component {
 
    state = {
@@ -68,4 +146,4 @@ class create extends Component {
     )
   }
 }
-export default create;
+export default create;*/

@@ -43,3 +43,16 @@ export const loginsincrono = (email, password) => {
     }
     
 }
+export const registerincrono = (name, email,number, password) => { 
+    return{ 
+        type: userTypes.register,
+        payload: {
+            email,
+            name,
+            number,
+            password
+        
+        }
+    }
+    
+}
