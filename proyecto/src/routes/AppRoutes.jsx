@@ -9,6 +9,8 @@ import Pag2 from '../containers/Pag2'
 import Pag3 from '../containers/Pag3'
 import NavBar from '../components/NavBar';
 import Mywork from '../components/aehi';
+import Mywork1 from '../containers/yolo';
+import Mywork2 from '../containers/preguntas';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import { PrivateRouter } from "./PrivateRouter";
@@ -47,7 +49,8 @@ const AppRouter = () => {
                 {/* Rutas privadas */}
                 <Route path='/' element={<PrivateRouter isAutentication={auth}> <Home /> </PrivateRouter>} />
                 <Route path='/myworks' element={<PrivateRouter isAutentication={auth}> <Mywork /> </PrivateRouter>} />
-
+                <Route path='/myworks1' element={<PrivateRouter isAutentication={auth}> <Mywork1 /> </PrivateRouter>} />
+                <Route path='/julianfff' element={<PrivateRouter isAutentication={auth}> <Mywork2 /> </PrivateRouter>} />
                 {/* Redireccionamiento */}
                 <Route path='*' element={<Navigate to='/login' />} />
             </Routes>

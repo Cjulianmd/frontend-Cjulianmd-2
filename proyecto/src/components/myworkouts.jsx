@@ -37,7 +37,7 @@ function MyProduct(){
                 
                 {
                     products.map(({title,foto,descri,time,id} ) => (
-                    
+                    <Link to="/myworks1" >
                     <Contpro1 to="/login" key={id} >
                         <Contproim>
                             <img src={foto} alt=""/>
@@ -48,6 +48,7 @@ function MyProduct(){
                             <Contprotm>{time} min</Contprotm>
                         </Contprotexto>
                     </Contpro1>
+                    </Link>
                     
                     ))
                 }

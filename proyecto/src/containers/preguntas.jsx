@@ -1,30 +1,56 @@
-import React, {  useState } from "react"
-import Reactplayer from 'react-player'
-import { Video, Textacon1, Back, Bpre2, Btpre, Bpre3, Bpre1, BtNext, BtpreN, BoxPre4, BoxPre2, BoxP } from '../style/StyleGlobal'
 import {NavLink} from 'react-router-dom'
-import r5 from '../assets/img/flecha.svg'
-import { Bpre4, BoxPre, BoxPre3, BoxPreT } from './../style/StyleGlobal';
-
-export default function Postres() {
-const [counter, setCounter] = useState(1);
- function count(){
-  if(counter == 11){
-      console.log("hola")
-      window.location.href="./win";
-    }else{
-      setCounter(counter + 1)
-      cookies.set('count', counter, {phat: "/"});
-      console.log(counter)
+import React, { Component } from 'react';
+import {BtNext, BtpreN, Img2} from '../style/StyleGlobal'
+import Img1  from '../assets/img/img3.svg';
+import slider from '../assets/img/Slider3.svg'
+import {TitleN, TextN , SliderN} from '../style/StyleGlobal'
+import Tap1 from '../components/NavBar'
+class Quiz extends Component {
+    render() {
+        return (
+            <React.StrictMode>
+                <Tap1/>
+                <Img2><td><img src={Img1} alt=""/></td>
+                </Img2>
+                <NavLink to="/iniciarseccion">
+                    <BtNext ><center><BtpreN>Next</BtpreN></center></BtNext>
+                </NavLink>
+                <TitleN>Сharacter</TitleN>
+                <TextN>
+                Cultivate in you an iron character
+ for training
+                </TextN>
+                <SliderN><td><img src={slider} alt=""/></td></SliderN>
+            </React.StrictMode>
+        );
     }
- }
- 
-	return (
-		<div >
-      <NavLink to='/test'><Back><img src={r5} alt=""/></Back></NavLink>
+}
+
+export default Quiz;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const [counter, setCounter] = useState(1);
+
+function count(){
+      window.location.href="./win";
+ }*/
+ /*<NavLink to='/test'><Back><img src={r5} alt=""/></Back></NavLink>
         <Textacon1>About business</Textacon1>
       <Video>
       <Reactplayer
-      url={video} 
+      url='https://www.youtube.com/embed/EeO0Sesuri8'
       border-radius='15px'
       height='200px'  
       width='358px'
@@ -32,47 +58,34 @@ const [counter, setCounter] = useState(1);
       playing/>
     </Video>
     <BoxP>
-      {descripcion}{pregunta}
+
 
     </BoxP>
     <BoxPre>
-      <Bpre1 onClick={(e) => handleAnswerSumit(opciones[0].isCorrect, e)}>
+      <Bpre1 >
       <center>
       <Btpre>A</Btpre>
       </center>
       </Bpre1>
-      <BoxPreT>{opciones[0].textoRespuesta}</BoxPreT>
+      <BoxPreT></BoxPreT>
     </BoxPre>
 
     <BoxPre2>
-      <Bpre2 onClick={(e) => handleAnswerSumit(opciones[1].isCorrect,e)}>
+      <Bpre2 >
       <center>
       <Btpre>B</Btpre>
       </center>
       </Bpre2>
-      <BoxPreT>{opciones[1].textoRespuesta}</BoxPreT>
+      <BoxPreT></BoxPreT>
     </BoxPre2>
 
     <BoxPre3>
-      <Bpre3 onClick={(e) => handleAnswerSumit(opciones[2].isCorrect,e)}>
+      <Bpre3>
       <center>
       <Btpre>C</Btpre>
       </center>
       </Bpre3>
-      <BoxPreT>{opciones[2].textoRespuesta}</BoxPreT>
+      <BoxPreT></BoxPreT>
     </BoxPre3>
 
-    <BoxPre4>
-    <Bpre4 onClick={(e) => handleAnswerSumit(opciones[3].isCorrect,e)}>
-    <center>
-     <Btpre>D</Btpre>
-     </center>
-    </Bpre4>
-      <BoxPreT>{opciones[3].textoRespuesta}</BoxPreT>
-    </BoxPre4>
-    <BtNext onClick={() => count()}><center><BtpreN  >Next</BtpreN></center></BtNext>
-    </div>
-
-	)
-
-}
+    <BtNext onClick={() => count()}><center><BtpreN  >Next</BtpreN></center></BtNext>*/

@@ -1603,3 +1603,46 @@ height: 62px;
 left: 27px;
 top: 664px;
 `
+export const Recta45 = styled.div`
+/* Rectangle 74 */
+
+
+box-sizing: border-box;
+
+/* Done exercise */
+
+
+position: absolute;
+width: 358px;
+height: 44px;
+left: 40px;
+top: 303px;
+
+/* Optional second color */
+
+border: 1px solid #2BE7E8;
+border-radius: 45px;
+`
+export const TexRecta45 = styled.div`
+/* Pull-ups */
+
+
+position: absolute;
+width: 52px;
+height: 16px;
+left: 57px;
+top: 317px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: -0.3px;
+
+/* White */
+
+color: #FFFFFF;
+
+`
