@@ -16,13 +16,3 @@ export const userReducer = (state = 0, action) => {
     }
     
 }
-export const userReduce = (state = 0, action) => {
-
-    switch (action.type) {
-        case protypes.read:
-            return action.payload
-        default:
-            return state
-    }
-    
-}

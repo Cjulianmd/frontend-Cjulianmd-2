@@ -3,7 +3,3 @@ export const userTypes = {
     register: '[USER] register',
     read: '[USR] read'
 }
-
-export const protypes = {
-    read: '[USR] read'
-}

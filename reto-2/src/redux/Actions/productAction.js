@@ -1,6 +1,7 @@
 
 import { collection, getDocs } from "firebase/firestore"
 import { db } from "../../firebase/firebaseconfig"
+import { ProTypes } from "../types/productosTypes"
 import { protypes, userTypes } from "../types/userTypes"
 
 
@@ -11,8 +12,8 @@ export const products = () => {
     return async(dispatch) => {
         try {
             const dates = []
-            const res = await getDocs(collection(db,'products'))
-            res.forEach((doc) => dates.push(doc.data()))
+            const resp = await getDocs(collection(db,'products'))
+            resp.forEach((doc) => dates.push(doc.data()))
             dispatch(readproducts(dates))
         } catch (error) {
             alert("eres un imbecil")
@@ -21,7 +22,7 @@ export const products = () => {
     }
 }
 const readproducts = (dates) =>( {
-   type: protypes.read,
+   type: ProTypes.read,
    payload: dates
 })
 
