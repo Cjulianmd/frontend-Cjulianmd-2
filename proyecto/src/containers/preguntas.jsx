@@ -9,20 +9,19 @@ import r2 from '../assets/img/set 2.svg'
 import r3 from '../assets/img/set 3.svg'
 export default function Postres() {
 const [counter, setCounter] = useState(1);
-
- const [video, useVideo] = useState(1)
-
+let video = 'https://youtu.be/4Pu5BdT5DcY'
+ 
  function btn1(){
-  const video ='https://www.youtube.com/embed/EeO0Sesuri8'
-  //useVideo(video)
+  video ='https://www.youtube.com/embed/EeO0Sesuri8'
+  setCounter(video)
 }
 function btn2(){
-  let video ='https://youtu.be/4Pu5BdT5DcY'
-  //useVideo(video)
+  video ='https://youtu.be/4Pu5BdT5DcY'
+  setCounter(video)
 }
 function btn3(){
-  let video ='https://youtu.be/IZ0sqAvaDBU'
-  //useVideo(video)
+  video ='https://youtu.be/IZ0sqAvaDBU'
+  setCounter(video)
 }
 	return (
 		<div >
@@ -30,7 +29,7 @@ function btn3(){
         <Textacon1>About business</Textacon1>
       <Video>
       <Reactplayer
-      url= {video}
+      url= {counter}
       border-radius='15px'
       height='200px'  
       width='358px'
