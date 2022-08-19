@@ -419,11 +419,15 @@ border-radius: 44px;
 
   `
   export const Re5 = styled.div`
-  position: unset;
-  width: 800px;
-  height: 220px;
-  left: 0px;
-  top: 0px;
+  /* advice cards */
+
+
+position: absolute;
+width: 374px;
+height: 122px;
+left: 16px;
+top: 112px;
+
 
   `
   export const Re3 = styled.div`
@@ -1353,70 +1357,72 @@ border-radius: 15px;
 `
 export const Textin = styled.div`
 
-/* Macbook air 2015 core i3 */
+/* Ralph Edwards */
 
 
 position: absolute;
-width: 150px;
-height: 16px;
-left: 16px;
-top: 255px;
+width: 94px;
+height: 14.63px;
+left: 64px;
+top: 77.37px;
 
 font-family: 'Raleway';
 font-style: normal;
-font-weight: 300;
+font-weight: 400;
 font-size: 14px;
 line-height: 16px;
-text-align: center;
 letter-spacing: -0.3px;
 
-color: #000000;
+/* White */
+
+color: #FFFFFF;
 `
 export const Precio = styled.div`
 
-/* 759 $ */
+/* Hi! */
 
 
 position: absolute;
-width: 40px;
-height: 19px;
-left: 16px;
-top: 277px;
+width: 17px;
+height: 14.63px;
+left: 64px;
+top: 61.83px;
 
 font-family: 'Raleway';
 font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-text-align: center;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
 letter-spacing: -0.3px;
 
-/* Main dark color */
+/* White */
 
-color: #474747;
+color: #FFFFFF;;
 
 `
 export const Btninfo1 = styled.div`
-
-/* Call button */
+/* Tabs */
 
 
 position: absolute;
-width: 171px;
+width: 358px;
 height: 32px;
 left: 16px;
-top: 312px;
+top: 250px;
+
 
 `
 export const Btninfo2 = styled.div`
 
+/* Notification */
+
+
 position: absolute;
-width: 171px;
-height: 32px;
-left: 203px;
-top: 312px;
+width: 25px;
+height: 25px;
+left: 349px;
+top: 67px;
+
 
 `
 export const TitleD = styled.div`
@@ -1496,4 +1502,104 @@ width: 25px;
 height: 25px;
 left: 206px;
 top: 672px;
+`
+
+export const Contpro = styled.div`
+/* 1 workout block */
+position: absolute;
+width: 358px;
+
+left: 16px;
+top: 328px;
+`
+
+export const Contpro1 = styled.div`
+
+/* Rectangle 61 */
+width: 358px;
+height: 194px;
+left: 17px;
+top: 538px;
+
+/* Additional shade of the main color */
+
+background: #2E3562;
+border-radius: 11px;
+
+`
+export const Contproim = styled.div`
+
+width: 358px;
+height: 120px;
+left: 16px;
+bottom: 396px;
+
+`
+export const Contprotl = styled.div`
+  
+    width: 181px;
+    height: 21px;
+    left: 25px;
+    bottom: 53px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.3px;
+
+    /* White */
+
+    color: #FFFFFF;
+
+
+`
+export const Contprotx = styled.div`
+
+width: 182px;
+height: 33px;
+left: 27px;
+bottom: 20px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 300;
+font-size: 9px;
+line-height: 11px;
+letter-spacing: -0.3px;
+
+/* White */
+
+color: #FFFFFF;
+
+`
+export const Contprotm = styled.div`
+position: relative;
+width: 41px;
+height: 16px;
+left: 300px;
+bottom: 50px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: -0.3px;
+
+/* White */
+
+color: #FFFFFF;
+
+`
+export const Contprotexto = styled.div`
+/* text */
+
+width: 332px;
+height: 62px;
+left: 27px;
+top: 664px;
 `

@@ -25,7 +25,7 @@ const LoginForm = () => {
        e.preventDefault();
          console.log(formValues)
          dispatch(registerWithEmail(formValues.email, formValues.password, formValues.name));
-
+         reset()
    }
    const handleGoogle = () => {
       dispatch(loginGogle())
