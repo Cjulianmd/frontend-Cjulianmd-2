@@ -1,56 +1,39 @@
+import React, {  useState } from "react"
+import Reactplayer from 'react-player'
+import { Video, Textacon1, Back, Bpre2, Btpre, Bpre3, Bpre1, BtNext, BtpreN, BoxPre4, BoxPre2, BoxP } from '../style/StyleGlobal'
 import {NavLink} from 'react-router-dom'
-import React, { Component } from 'react';
-import {BtNext, BtpreN, Img2} from '../style/StyleGlobal'
-import Img1  from '../assets/img/img3.svg';
-import slider from '../assets/img/Slider3.svg'
-import {TitleN, TextN , SliderN} from '../style/StyleGlobal'
-import Tap1 from '../components/NavBar'
-class Quiz extends Component {
-    render() {
-        return (
-            <React.StrictMode>
-                <Tap1/>
-                <Img2><td><img src={Img1} alt=""/></td>
-                </Img2>
-                <NavLink to="/iniciarseccion">
-                    <BtNext ><center><BtpreN>Next</BtpreN></center></BtNext>
-                </NavLink>
-                <TitleN>Сharacter</TitleN>
-                <TextN>
-                Cultivate in you an iron character
- for training
-                </TextN>
-                <SliderN><td><img src={slider} alt=""/></td></SliderN>
-            </React.StrictMode>
-        );
-    }
+import r5 from '../assets/img/flecha.svg'
+import { Bpre4, BoxPre, BoxPre3, BoxPreT } from './../style/StyleGlobal';
+import r1 from '../assets/img/Done set.svg'
+import r2 from '../assets/img/set 2.svg'
+import r3 from '../assets/img/set 3.svg'
+export default function Postres() {
+const [counter, setCounter] = useState(1);
+ function count(){
+      window.location.href="./";
+  
+ }
+ const [video, useVideo] = useState(1)
+
+ function btn1(){
+  const video ='https://www.youtube.com/embed/EeO0Sesuri8'
+  //useVideo(video)
 }
-
-export default Quiz;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const [counter, setCounter] = useState(1);
-
-function count(){
-      window.location.href="./win";
- }*/
- /*<NavLink to='/test'><Back><img src={r5} alt=""/></Back></NavLink>
+function btn2(){
+  let video ='https://youtu.be/4Pu5BdT5DcY'
+  //useVideo(video)
+}
+function btn3(){
+  let video ='https://youtu.be/IZ0sqAvaDBU'
+  //useVideo(video)
+}
+	return (
+		<div >
+      <NavLink to='/test'><Back><img src={r5} alt=""/></Back></NavLink>
         <Textacon1>About business</Textacon1>
       <Video>
       <Reactplayer
-      url='https://www.youtube.com/embed/EeO0Sesuri8'
+      url= {video}
       border-radius='15px'
       height='200px'  
       width='358px'
@@ -61,31 +44,21 @@ function count(){
 
 
     </BoxP>
-    <BoxPre>
-      <Bpre1 >
-      <center>
-      <Btpre>A</Btpre>
-      </center>
-      </Bpre1>
-      <BoxPreT></BoxPreT>
+    <BoxPre onClick={() =>btn1()}>
+    <img src={r1} alt=""/>
     </BoxPre>
 
-    <BoxPre2>
-      <Bpre2 >
-      <center>
-      <Btpre>B</Btpre>
-      </center>
-      </Bpre2>
-      <BoxPreT></BoxPreT>
+    <BoxPre2 onClick={() =>btn2()}>
+    <img src={r2} alt=""/>
     </BoxPre2>
 
-    <BoxPre3>
-      <Bpre3>
-      <center>
-      <Btpre>C</Btpre>
-      </center>
-      </Bpre3>
-      <BoxPreT></BoxPreT>
+    <BoxPre3 onClick={() =>btn3()}>
+    <img src={r3} alt=""/>
     </BoxPre3>
 
-    <BtNext onClick={() => count()}><center><BtpreN  >Next</BtpreN></center></BtNext>*/
+    <BtNext onClick={() => count()}><center><BtpreN  >Finish</BtpreN></center></BtNext>
+    </div>
+
+	)
+
+}

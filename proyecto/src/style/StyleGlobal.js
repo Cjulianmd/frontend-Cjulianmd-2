@@ -822,14 +822,11 @@ bottom: 92.89%;
 
 export const Video = styled.div`
 
-/* Video */
-
-border-radius: 50px;
 position: absolute;
-width: 358px;
-height: 200px;
-left: 16px;
-top: 92px;
+width: 480px;
+height: 244px;
+left: 20px;
+top: 0px;
 
 `
 export const Preguntas = styled.div`

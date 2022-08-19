@@ -9,7 +9,7 @@ import Pag2 from '../containers/Pag2'
 import Pag3 from '../containers/Pag3'
 import NavBar from '../components/NavBar';
 import Mywork from '../components/aehi';
-import Mywork1 from '../containers/yolo';
+import Mywork1 from '../containers/workout';
 import Mywork2 from '../containers/preguntas';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
