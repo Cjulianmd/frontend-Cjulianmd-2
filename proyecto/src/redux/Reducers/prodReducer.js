@@ -7,6 +7,8 @@ export const productoReducer = ( state = [], action ) => {
 
         case ProTypes.read:
             return action.payload
+        case ProTypes.add:
+            return action.payload
 
         default:
             return state;
@@ -16,7 +18,7 @@ export const productoReducer = ( state = [], action ) => {
 export const myproductoReducer = ( state = [], action ) => {
     switch (action.type) {
 
-        case MyProTypes.read1:
+        case MyProTypes.add:
             return action.payload
 
         default:

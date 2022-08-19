@@ -11,10 +11,9 @@ function Product(){
     
         const {read} = useSelector(state => state)
         
-         console.log(read)
         
-        const comi = () =>{
-            console.log("hola")
+        const comi = (data) =>{
+            console.log(data)
         }
             
 
@@ -31,7 +30,7 @@ function Product(){
                 {
                     read.map(({title,foto,descri,time},idx ) => (
                     
-                    <Contpro1 key={idx} onClick={comi}>
+                    <Contpro1 key={idx} onClick={() => comi(read[idx])}>
                         <Contproim>
                             <img src={foto} alt=""/>
                         </Contproim>
