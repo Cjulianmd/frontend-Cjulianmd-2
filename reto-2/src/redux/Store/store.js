@@ -1,6 +1,6 @@
 import {applyMiddleware, combineReducers,createStore} from "redux"
 import thunk from "redux-thunk";
-import { userReducer } from "../Reducers/userReducer";
+import { userReduce, userReducer } from "../Reducers/userReducer";
 
 
 
@@ -9,7 +9,9 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ;
 
 const reducers = combineReducers({
     login: userReducer,
+    read: userReduce
 })
+
 
 
 export const store = createStore(
