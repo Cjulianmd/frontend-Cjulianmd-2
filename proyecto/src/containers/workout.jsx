@@ -5,8 +5,6 @@ import { TexRecta45 } from './../style/StyleGlobal';
 import { NavLink } from 'react-router-dom';
 
 function Yolo(){
-    const [bacground, setBacground] = useState(false);
-
         return (
             <div>
                  <NavLink to='/julianfff'>

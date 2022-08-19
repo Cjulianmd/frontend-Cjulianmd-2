@@ -9,10 +9,7 @@ import r2 from '../assets/img/set 2.svg'
 import r3 from '../assets/img/set 3.svg'
 export default function Postres() {
 const [counter, setCounter] = useState(1);
- function count(){
-      window.location.href="./";
-  
- }
+
  const [video, useVideo] = useState(1)
 
  function btn1(){
@@ -29,7 +26,7 @@ function btn3(){
 }
 	return (
 		<div >
-      <NavLink to='/test'><Back><img src={r5} alt=""/></Back></NavLink>
+      <NavLink to='/'><Back><img src={r5} alt=""/></Back></NavLink>
         <Textacon1>About business</Textacon1>
       <Video>
       <Reactplayer
@@ -55,8 +52,8 @@ function btn3(){
     <BoxPre3 onClick={() =>btn3()}>
     <img src={r3} alt=""/>
     </BoxPre3>
-
-    <BtNext onClick={() => count()}><center><BtpreN  >Finish</BtpreN></center></BtNext>
+    <NavLink to='/'>
+    <BtNext><center><BtpreN>Finish</BtpreN></center></BtNext></NavLink>
     </div>
 
 	)
