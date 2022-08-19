@@ -6,14 +6,11 @@ import { NavLink } from 'react-router-dom';
 
 function Yolo(){
     const [bacground, setBacground] = useState(false);
-    const presion = () => {
-        window.location.href="./julianfff"
-    }
-    
+
         return (
             <div>
                  <NavLink to='/julianfff'>
-                <Recta45 onClick = {presion} ></Recta45> 
+                <Recta45></Recta45> 
                 <TexRecta45>Pull-ups</TexRecta45> 
                
                     <img src={tap} alt=""/>
