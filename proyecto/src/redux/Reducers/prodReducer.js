@@ -1,5 +1,5 @@
 
-import { ProTypes } from './../types/productosTypes';
+import { MyProTypes, ProTypes } from './../types/productosTypes';
 
 
 export const productoReducer = ( state = [], action ) => {
@@ -12,3 +12,19 @@ export const productoReducer = ( state = [], action ) => {
             return state;
     }
 }
+
+export const myproductoReducer = ( state = [], action ) => {
+    switch (action.type) {
+
+        case MyProTypes.read1:
+            return action.payload
+
+        default:
+            return state;
+    }
+}
+
+
+
+
+

@@ -7,7 +7,7 @@ import r4 from '../assets/img/relleno4.svg'
 import r5 from '../assets/img/relleno5.svg'
 import { useDispatch } from 'react-redux';
 import { getAuth, onAuthStateChanged,signOut } from "firebase/auth";
-import { products } from './../redux/Actions/productAction';
+import { Myproducts, products } from './../redux/Actions/productAction';
 import Appbar from './apbar'
 import Produc from './myworkouts'
 
@@ -21,7 +21,7 @@ function Arho(){
     const [auth, setAuth] = useState(false)
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(products());
+        dispatch(Myproducts());
         const auth = getAuth();
         onAuthStateChanged( auth, (user) => {
 
