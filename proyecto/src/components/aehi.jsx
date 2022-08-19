@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 import { getAuth, onAuthStateChanged,signOut } from "firebase/auth";
 import { products } from './../redux/Actions/productAction';
 import Appbar from './apbar'
-import Produc from './productos'
+import Produc from './myworkouts'
 
 
 function Arho(){
@@ -44,4 +44,3 @@ function Arho(){
 }
 
 export default Arho;
-

@@ -5,9 +5,9 @@ import { Btninfo1, Contpro, Contpro1, Contprotexto, Contprotl, Contprotm } from 
 import { Contproim, Contprotx } from './../style/StyleGlobal';
 import { useDispatch } from 'react-redux';
 import { products } from './../redux/Actions/productAction';
-import r4 from '../assets/img/relleno4.svg'
+import r4 from '../assets/img/Tabs2.svg';
 import { Link } from "react-router-dom";
-function Product(){
+function MyProduct(){
     
         const {read} = useSelector(state => state)
         
@@ -25,13 +25,13 @@ function Product(){
         }, [])
 
         return (<>
-         <Link to="/myworks" ><Btninfo1 ><img src={r4} alt=""/></Btninfo1></Link>
+        <Link to="/" ><Btninfo1 ><img src={r4} alt=""/></Btninfo1></Link>
             <Contpro>
                 
                 {
                     read.map(({title,foto,descri,time},idx ) => (
                     
-                    <Contpro1 key={idx} onClick={comi}>
+                    <Contpro1 to="/login" key={idx} onClick={comi}>
                         <Contproim>
                             <img src={foto} alt=""/>
                         </Contproim>
@@ -50,6 +50,4 @@ function Product(){
         
 }
 
-export default Product;
-
-/**/
+export default MyProduct;
