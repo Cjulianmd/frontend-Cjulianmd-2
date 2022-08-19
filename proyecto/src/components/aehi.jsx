@@ -7,9 +7,10 @@ import r4 from '../assets/img/relleno4.svg'
 import r5 from '../assets/img/relleno5.svg'
 import { useDispatch } from 'react-redux';
 import { getAuth, onAuthStateChanged,signOut } from "firebase/auth";
-import { Myproducts, products } from './../redux/Actions/productAction';
+import {  products } from './../redux/Actions/productAction';
 import Appbar from './apbar'
 import Produc from './myworkouts'
+import { Myproducts } from './../redux/Actions/mypro';
 
 
 function Arho(){

@@ -1,7 +1,8 @@
 import {applyMiddleware, combineReducers,createStore} from "redux"
 import thunk from "redux-thunk";
-import { myproductoReducer, productoReducer } from "../Reducers/prodReducer";
+import {  productoReducer } from "../Reducers/prodReducer";
 import { userReduce, userReducer } from "../Reducers/userReducer";
+import { myproductoReducer } from './../Reducers/myproReducer';
 
 
 

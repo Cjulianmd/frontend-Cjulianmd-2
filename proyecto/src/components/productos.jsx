@@ -4,20 +4,19 @@ import r1 from '../assets/img/relleno1.svg'
 import { Btninfo1, Contpro, Contpro1, Contprotexto, Contprotl, Contprotm } from "../style/StyleGlobal";
 import { Contproim, Contprotx } from './../style/StyleGlobal';
 import { useDispatch } from 'react-redux';
-import { products } from './../redux/Actions/productAction';
+import {  products } from './../redux/Actions/productAction';
 import r4 from '../assets/img/relleno4.svg'
 import { Link } from "react-router-dom";
+import { Myproducts } from './../redux/Actions/mypro';
 function Product(){
-    
+       
         const {read} = useSelector(state => state)
-        
-        
-        const comi = (data) =>{
-            console.log(data)
-        }
-            
-
         const dispatch = useDispatch();
+        
+        const comi = (data) =>{ 
+            
+            dispatch(Myproducts(data));
+        }
         useEffect(() => {
             dispatch(products());
            

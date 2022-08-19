@@ -15,17 +15,6 @@ export const productoReducer = ( state = [], action ) => {
     }
 }
 
-export const myproductoReducer = ( state = [], action ) => {
-    switch (action.type) {
-
-        case MyProTypes.add:
-            return action.payload
-
-        default:
-            return state;
-    }
-}
-
 
 
 
