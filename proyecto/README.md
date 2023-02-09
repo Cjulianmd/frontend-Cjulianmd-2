@@ -1,33 +1,50 @@
-# 👋 Bienvenido al Reto 2
+# Getting Started with Create React App
 
-**Para hacer este reto, necesitas muy buena comprensión de React y Redux. Buscamos que logres mostrar tu destresa trabajando con compponentes en función, además de evidenciar los conocimientos esenciales para realizar aplicaciones web dinámicas utilizando React JS**
+Description:
 
-# 📝 Descripción General del Reto 2
+A university wishes to systematize its monitoring program, which is led by a monitoring coordinator in charge of directing the monitors.
 
-El reto consiste en constuir un producto web teniendo como referencia un diseño previo y debes lograr que se parezca lo más posible al diseño que fue suministrado.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-El objetivo es implementar la solución haciendo uso de React y Redux e implementar los requerimientos técnicos.
+### `intall nodejs `
+web intallation:https://nodejs.org/es/
 
-En la zona de **Recursos** vas a encontrar un enlace externo con los requerimientos de diseño y técnicos que debes cumplir para la entrega de este reto.
+## Available Scripts
 
-# 📚 Recursos
+In the project directory, you can run:
 
-[Recursos Reto 2](https://drive.google.com/drive/folders/1QsU_WHsDmND136-ioM2kof_t76UaCZNP?usp=sharing)
+### `npm i`
+for install dependency
 
-## 🚀 Desplegando tu proyecto
+### `npm start`
 
-Hay muchas formas de alojar su proyecto de forma gratuita, Algunas opciones son:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-- [Surge](https://surge.sh/)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## ✅ Entrega del Reto 2
+### `npm test`
 
-Para realizar la entrega de esta actividad debe realizar los siguientes pasos:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. Crear un `Issue` llamado **Entrega-Frontend-Sprint3-Reto2**
-2. Recuerda trabajar sobre este repositorio, es decir, toda la evidencia de código de la solución a este reto debe estar en tu carpeta **reto-2**
-3. Agregar en el `Issue` la documentación técnica de la manera en que le diste solución a tu reto.
-4. Generar la URL de despliegue y relacionarla en el `Issue` **Entrega-Frontend-Sprint3-Reto2**
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
