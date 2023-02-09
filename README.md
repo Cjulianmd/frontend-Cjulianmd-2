@@ -1,61 +1,50 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8180893&assignment_repo_type=AssignmentRepo)
-# 👋🏼 Bienvenid@ a Frontend y Sprint 3
+# Getting Started with Create React App
 
-<h3 align="center"><strong>!Bienvenidos a nuestro Campo de Entrenamiento Frontend Geek 🤖,  estamos muy a gusto en que seas parte de nuestra comunidad y poder apoyarte en tu crecimiento profesional en el maravilloso mundo del desarrollo del software!</strong></h3>
+Description:
 
-En este Sprint a realizar vas a evidenciar los conceptos para adquirir los conocimientos esenciales en React JS y manejo del estado global con Redux para convertirte en un desarrollador web. 
+A university wishes to systematize its monitoring program, which is led by a monitoring coordinator in charge of directing the monitors.
 
-# 🎯 Objetivo del Sprint 3:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Adquirir los conocimientos esenciales para realizar SPA (single page application) en React JS y Redux. 
+### `intall nodejs `
+web intallation:https://nodejs.org/es/
 
-Con el Sprint 3 se pretende que los beneficiarios tengan los conceptos esenciales que se requieren para introducirse en el camino de formación como desarrolladores web y sirva como elementos de línea base de las tecnologías necesarias para su proceso de formación mediante una metodología de aprendizaje progresivo por medio de proyectos y retos cercanos a la exigencia y tareas o actividades que te vas a encontrar en un entorno laboral.
+## Available Scripts
 
-# 📚 Contenido - Temáticas
+In the project directory, you can run:
 
-- Frameworks CSS<br><br>
-- Componentes en función - React Hooks<br><br>
-- Hooks de enrutamiento<br><br>
-- Enrutamiento dinámico - React Router<br><br>
-- Protección de Rutas (públicas y privadas)<br><br>
-- Redux - React Redux<br><br>
-- Firebase<br><br>
-- Pruebas unitarias<br><br>
-- Jest<br><br>
-- Enzyme<br><br>
+### `npm i`
+for install dependency
 
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# 🎖 Entregables
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-[Reto 1 - Semana 5](https://drive.google.com/drive/folders/16n_7y4QwP7ZBYBY9M7SMJeknXGyVrhMZ?usp=sharing)<br><br> 
-[Reto 2 - Semana 6](https://drive.google.com/drive/folders/1QsU_WHsDmND136-ioM2kof_t76UaCZNP?usp=sharing)<br><br>
-[Proyecto Final Sprint 3](https://drive.google.com/drive/folders/1McNYJQI9IHqKewTn49BhdNQP_tSk2Ftj?usp=sharing)<br><br>
-[Certificación Free Code Camp - Frontend React](https://www.freecodecamp.org/learn/front-end-development-libraries/)<br><br>
+### `npm test`
 
-# 📘 Recursos
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-[Recursos Sprint 3](https://drive.google.com/file/d/1X7z89HngE_bbiA1jvv-msFNUs6rTtjTj/view?usp=sharing) <br><br>
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# ✅ Issues 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Para sus asignaciones (entregas) , creará `Issues` en GitHub.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Para crear un Issue, debe ubicarse en la pestaña marcada como `Issues`:
+### `npm run eject`
 
-![Creación de un Issue](https://storage.googleapis.com/academia-geek-general-bucket/issue_1.png)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Una vez que haga clic en esa pestaña, verá todos los problemas actuales en este repositorio. En este punto, no se han creado `Issues`. Creemos un nuevo problema haciendo clic en `New issue`
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-![Nuevo Issue](https://storage.googleapis.com/academia-geek-general-bucket/issue_2.png)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Una vez que haya creado un nuevo problema, será recibido por la pantalla a continuación. Aquí proporcionarás
-* Un título para su problema (cada título debe ser el nombre de la tarea, por ejemplo según el caso en cada entrega de un módulo es "Entrega-Frontend-Sprint3-Reto1")
-* Un cuerpo para tu `Issue` para escribir una respuesta o subir una captura de pantalla.
-* Un botón de envío
-
-![Guardar Cambios del Issue](https://storage.googleapis.com/academia-geek-general-bucket/issue_3.png)
-
-
- > IMPORTANTE: Los `Issues` deben dejarse en estado abierto `Open`, de esta manera cada vez que usted crea un `Issue` una persona de nuestro equipo de mentores pasará a revisar si su entrega corresponde a los requerimientos solicitados en la asignación, tarea o entrega y es quien cambia el estado de un `Issue`, generando una etiqueta `Label` donde se relaciona el estado en que queda la revisión de su entrega, brindándole una retroalimentación de la revisión de la entrega y siendo el caso mejorar la calidad de tu proyecto, luego de esto el `Issue` es cerrado `Close` por parte del mentor o mentora que hizo revisión de tu entrega.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
